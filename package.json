@@ -1,0 +1,14 @@
+{
+  "name": "template-game",
+  "scripts": {
+    "serve": "serve public",
+    "build": "esbuild --bundle src/index.ts --outfile=public/index.js --minify --target=es2017 --sourcemap",
+    "build:watch": "esbuild --bundle src/index.ts --outfile=public/index.js --minify --target=es2017 --sourcemap --watch"
+  },
+  "devDependencies": {
+    "@netent-tech/ecas-provider": "2.1.2",
+    "esbuild": "0.17.17",
+    "serve": "14.2.0",
+    "typescript": "5.0.4"
+  }
+}
