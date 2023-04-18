@@ -21,7 +21,7 @@ class Game {
     // Make game respond to ecas events.
     audio.ready.then(ecas => {
       ecas.eventHandler.on(EcasEvents.Sound.Ended, (name: string) => {
-        alert('Sound ended: ' + name)
+        console.log('[game]: SOUND ENDED: ' + name)
       })
     })
   }
