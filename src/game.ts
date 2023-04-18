@@ -16,7 +16,7 @@ const triggers = [
 class Game {
   load() {
     // Make ecas respond to game triggers
-    triggers.forEach(add)
+    triggers.forEach(trigger => add(trigger))
 
     // Make game respond to ecas events.
     audio.ready.then(ecas => {
